@@ -1,0 +1,629 @@
+{
+  "items": [
+    {
+      "category": "Verbes",
+      "words": [
+        {
+          "id": "b1_verbes_1",
+          "german": "verbes1_de",
+          "french": "verbes1_fr",
+          "english": "verbes1_en"
+        },
+        {
+          "id": "b1_verbes_2",
+          "german": "verbes2_de",
+          "french": "verbes2_fr",
+          "english": "verbes2_en"
+        },
+        {
+          "id": "b1_verbes_3",
+          "german": "verbes3_de",
+          "french": "verbes3_fr",
+          "english": "verbes3_en"
+        },
+        {
+          "id": "b1_verbes_4",
+          "german": "verbes4_de",
+          "french": "verbes4_fr",
+          "english": "verbes4_en"
+        },
+        {
+          "id": "b1_verbes_5",
+          "german": "verbes5_de",
+          "french": "verbes5_fr",
+          "english": "verbes5_en"
+        },
+        {
+          "id": "b1_verbes_6",
+          "german": "verbes6_de",
+          "french": "verbes6_fr",
+          "english": "verbes6_en"
+        },
+        {
+          "id": "b1_verbes_7",
+          "german": "verbes7_de",
+          "french": "verbes7_fr",
+          "english": "verbes7_en"
+        },
+        {
+          "id": "b1_verbes_8",
+          "german": "verbes8_de",
+          "french": "verbes8_fr",
+          "english": "verbes8_en"
+        },
+        {
+          "id": "b1_verbes_9",
+          "german": "verbes9_de",
+          "french": "verbes9_fr",
+          "english": "verbes9_en"
+        },
+        {
+          "id": "b1_verbes_10",
+          "german": "verbes10_de",
+          "french": "verbes10_fr",
+          "english": "verbes10_en"
+        },
+        {
+          "id": "b1_verbes_11",
+          "german": "verbes11_de",
+          "french": "verbes11_fr",
+          "english": "verbes11_en"
+        },
+        {
+          "id": "b1_verbes_12",
+          "german": "verbes12_de",
+          "french": "verbes12_fr",
+          "english": "verbes12_en"
+        },
+        {
+          "id": "b1_verbes_13",
+          "german": "verbes13_de",
+          "french": "verbes13_fr",
+          "english": "verbes13_en"
+        },
+        {
+          "id": "b1_verbes_14",
+          "german": "verbes14_de",
+          "french": "verbes14_fr",
+          "english": "verbes14_en"
+        },
+        {
+          "id": "b1_verbes_15",
+          "german": "verbes15_de",
+          "french": "verbes15_fr",
+          "english": "verbes15_en"
+        },
+        {
+          "id": "b1_verbes_16",
+          "german": "verbes16_de",
+          "french": "verbes16_fr",
+          "english": "verbes16_en"
+        },
+        {
+          "id": "b1_verbes_17",
+          "german": "verbes17_de",
+          "french": "verbes17_fr",
+          "english": "verbes17_en"
+        },
+        {
+          "id": "b1_verbes_18",
+          "german": "verbes18_de",
+          "french": "verbes18_fr",
+          "english": "verbes18_en"
+        },
+        {
+          "id": "b1_verbes_19",
+          "german": "verbes19_de",
+          "french": "verbes19_fr",
+          "english": "verbes19_en"
+        },
+        {
+          "id": "b1_verbes_20",
+          "german": "verbes20_de",
+          "french": "verbes20_fr",
+          "english": "verbes20_en"
+        }
+      ]
+    },
+    {
+      "category": "Objets",
+      "words": [
+        {
+          "id": "b1_objets_1",
+          "german": "objets1_de",
+          "french": "objets1_fr",
+          "english": "objets1_en"
+        },
+        {
+          "id": "b1_objets_2",
+          "german": "objets2_de",
+          "french": "objets2_fr",
+          "english": "objets2_en"
+        },
+        {
+          "id": "b1_objets_3",
+          "german": "objets3_de",
+          "french": "objets3_fr",
+          "english": "objets3_en"
+        },
+        {
+          "id": "b1_objets_4",
+          "german": "objets4_de",
+          "french": "objets4_fr",
+          "english": "objets4_en"
+        },
+        {
+          "id": "b1_objets_5",
+          "german": "objets5_de",
+          "french": "objets5_fr",
+          "english": "objets5_en"
+        },
+        {
+          "id": "b1_objets_6",
+          "german": "objets6_de",
+          "french": "objets6_fr",
+          "english": "objets6_en"
+        },
+        {
+          "id": "b1_objets_7",
+          "german": "objets7_de",
+          "french": "objets7_fr",
+          "english": "objets7_en"
+        },
+        {
+          "id": "b1_objets_8",
+          "german": "objets8_de",
+          "french": "objets8_fr",
+          "english": "objets8_en"
+        },
+        {
+          "id": "b1_objets_9",
+          "german": "objets9_de",
+          "french": "objets9_fr",
+          "english": "objets9_en"
+        },
+        {
+          "id": "b1_objets_10",
+          "german": "objets10_de",
+          "french": "objets10_fr",
+          "english": "objets10_en"
+        },
+        {
+          "id": "b1_objets_11",
+          "german": "objets11_de",
+          "french": "objets11_fr",
+          "english": "objets11_en"
+        },
+        {
+          "id": "b1_objets_12",
+          "german": "objets12_de",
+          "french": "objets12_fr",
+          "english": "objets12_en"
+        },
+        {
+          "id": "b1_objets_13",
+          "german": "objets13_de",
+          "french": "objets13_fr",
+          "english": "objets13_en"
+        },
+        {
+          "id": "b1_objets_14",
+          "german": "objets14_de",
+          "french": "objets14_fr",
+          "english": "objets14_en"
+        },
+        {
+          "id": "b1_objets_15",
+          "german": "objets15_de",
+          "french": "objets15_fr",
+          "english": "objets15_en"
+        },
+        {
+          "id": "b1_objets_16",
+          "german": "objets16_de",
+          "french": "objets16_fr",
+          "english": "objets16_en"
+        },
+        {
+          "id": "b1_objets_17",
+          "german": "objets17_de",
+          "french": "objets17_fr",
+          "english": "objets17_en"
+        },
+        {
+          "id": "b1_objets_18",
+          "german": "objets18_de",
+          "french": "objets18_fr",
+          "english": "objets18_en"
+        },
+        {
+          "id": "b1_objets_19",
+          "german": "objets19_de",
+          "french": "objets19_fr",
+          "english": "objets19_en"
+        },
+        {
+          "id": "b1_objets_20",
+          "german": "objets20_de",
+          "french": "objets20_fr",
+          "english": "objets20_en"
+        }
+      ]
+    },
+    {
+      "category": "Adjectifs",
+      "words": [
+        {
+          "id": "b1_adjectifs_1",
+          "german": "adjectifs1_de",
+          "french": "adjectifs1_fr",
+          "english": "adjectifs1_en"
+        },
+        {
+          "id": "b1_adjectifs_2",
+          "german": "adjectifs2_de",
+          "french": "adjectifs2_fr",
+          "english": "adjectifs2_en"
+        },
+        {
+          "id": "b1_adjectifs_3",
+          "german": "adjectifs3_de",
+          "french": "adjectifs3_fr",
+          "english": "adjectifs3_en"
+        },
+        {
+          "id": "b1_adjectifs_4",
+          "german": "adjectifs4_de",
+          "french": "adjectifs4_fr",
+          "english": "adjectifs4_en"
+        },
+        {
+          "id": "b1_adjectifs_5",
+          "german": "adjectifs5_de",
+          "french": "adjectifs5_fr",
+          "english": "adjectifs5_en"
+        },
+        {
+          "id": "b1_adjectifs_6",
+          "german": "adjectifs6_de",
+          "french": "adjectifs6_fr",
+          "english": "adjectifs6_en"
+        },
+        {
+          "id": "b1_adjectifs_7",
+          "german": "adjectifs7_de",
+          "french": "adjectifs7_fr",
+          "english": "adjectifs7_en"
+        },
+        {
+          "id": "b1_adjectifs_8",
+          "german": "adjectifs8_de",
+          "french": "adjectifs8_fr",
+          "english": "adjectifs8_en"
+        },
+        {
+          "id": "b1_adjectifs_9",
+          "german": "adjectifs9_de",
+          "french": "adjectifs9_fr",
+          "english": "adjectifs9_en"
+        },
+        {
+          "id": "b1_adjectifs_10",
+          "german": "adjectifs10_de",
+          "french": "adjectifs10_fr",
+          "english": "adjectifs10_en"
+        },
+        {
+          "id": "b1_adjectifs_11",
+          "german": "adjectifs11_de",
+          "french": "adjectifs11_fr",
+          "english": "adjectifs11_en"
+        },
+        {
+          "id": "b1_adjectifs_12",
+          "german": "adjectifs12_de",
+          "french": "adjectifs12_fr",
+          "english": "adjectifs12_en"
+        },
+        {
+          "id": "b1_adjectifs_13",
+          "german": "adjectifs13_de",
+          "french": "adjectifs13_fr",
+          "english": "adjectifs13_en"
+        },
+        {
+          "id": "b1_adjectifs_14",
+          "german": "adjectifs14_de",
+          "french": "adjectifs14_fr",
+          "english": "adjectifs14_en"
+        },
+        {
+          "id": "b1_adjectifs_15",
+          "german": "adjectifs15_de",
+          "french": "adjectifs15_fr",
+          "english": "adjectifs15_en"
+        },
+        {
+          "id": "b1_adjectifs_16",
+          "german": "adjectifs16_de",
+          "french": "adjectifs16_fr",
+          "english": "adjectifs16_en"
+        },
+        {
+          "id": "b1_adjectifs_17",
+          "german": "adjectifs17_de",
+          "french": "adjectifs17_fr",
+          "english": "adjectifs17_en"
+        },
+        {
+          "id": "b1_adjectifs_18",
+          "german": "adjectifs18_de",
+          "french": "adjectifs18_fr",
+          "english": "adjectifs18_en"
+        },
+        {
+          "id": "b1_adjectifs_19",
+          "german": "adjectifs19_de",
+          "french": "adjectifs19_fr",
+          "english": "adjectifs19_en"
+        },
+        {
+          "id": "b1_adjectifs_20",
+          "german": "adjectifs20_de",
+          "french": "adjectifs20_fr",
+          "english": "adjectifs20_en"
+        }
+      ]
+    },
+    {
+      "category": "Nourriture",
+      "words": [
+        {
+          "id": "b1_nourriture_1",
+          "german": "nourriture1_de",
+          "french": "nourriture1_fr",
+          "english": "nourriture1_en"
+        },
+        {
+          "id": "b1_nourriture_2",
+          "german": "nourriture2_de",
+          "french": "nourriture2_fr",
+          "english": "nourriture2_en"
+        },
+        {
+          "id": "b1_nourriture_3",
+          "german": "nourriture3_de",
+          "french": "nourriture3_fr",
+          "english": "nourriture3_en"
+        },
+        {
+          "id": "b1_nourriture_4",
+          "german": "nourriture4_de",
+          "french": "nourriture4_fr",
+          "english": "nourriture4_en"
+        },
+        {
+          "id": "b1_nourriture_5",
+          "german": "nourriture5_de",
+          "french": "nourriture5_fr",
+          "english": "nourriture5_en"
+        },
+        {
+          "id": "b1_nourriture_6",
+          "german": "nourriture6_de",
+          "french": "nourriture6_fr",
+          "english": "nourriture6_en"
+        },
+        {
+          "id": "b1_nourriture_7",
+          "german": "nourriture7_de",
+          "french": "nourriture7_fr",
+          "english": "nourriture7_en"
+        },
+        {
+          "id": "b1_nourriture_8",
+          "german": "nourriture8_de",
+          "french": "nourriture8_fr",
+          "english": "nourriture8_en"
+        },
+        {
+          "id": "b1_nourriture_9",
+          "german": "nourriture9_de",
+          "french": "nourriture9_fr",
+          "english": "nourriture9_en"
+        },
+        {
+          "id": "b1_nourriture_10",
+          "german": "nourriture10_de",
+          "french": "nourriture10_fr",
+          "english": "nourriture10_en"
+        },
+        {
+          "id": "b1_nourriture_11",
+          "german": "nourriture11_de",
+          "french": "nourriture11_fr",
+          "english": "nourriture11_en"
+        },
+        {
+          "id": "b1_nourriture_12",
+          "german": "nourriture12_de",
+          "french": "nourriture12_fr",
+          "english": "nourriture12_en"
+        },
+        {
+          "id": "b1_nourriture_13",
+          "german": "nourriture13_de",
+          "french": "nourriture13_fr",
+          "english": "nourriture13_en"
+        },
+        {
+          "id": "b1_nourriture_14",
+          "german": "nourriture14_de",
+          "french": "nourriture14_fr",
+          "english": "nourriture14_en"
+        },
+        {
+          "id": "b1_nourriture_15",
+          "german": "nourriture15_de",
+          "french": "nourriture15_fr",
+          "english": "nourriture15_en"
+        },
+        {
+          "id": "b1_nourriture_16",
+          "german": "nourriture16_de",
+          "french": "nourriture16_fr",
+          "english": "nourriture16_en"
+        },
+        {
+          "id": "b1_nourriture_17",
+          "german": "nourriture17_de",
+          "french": "nourriture17_fr",
+          "english": "nourriture17_en"
+        },
+        {
+          "id": "b1_nourriture_18",
+          "german": "nourriture18_de",
+          "french": "nourriture18_fr",
+          "english": "nourriture18_en"
+        },
+        {
+          "id": "b1_nourriture_19",
+          "german": "nourriture19_de",
+          "french": "nourriture19_fr",
+          "english": "nourriture19_en"
+        },
+        {
+          "id": "b1_nourriture_20",
+          "german": "nourriture20_de",
+          "french": "nourriture20_fr",
+          "english": "nourriture20_en"
+        }
+      ]
+    },
+    {
+      "category": "Corps",
+      "words": [
+        {
+          "id": "b1_corps_1",
+          "german": "corps1_de",
+          "french": "corps1_fr",
+          "english": "corps1_en"
+        },
+        {
+          "id": "b1_corps_2",
+          "german": "corps2_de",
+          "french": "corps2_fr",
+          "english": "corps2_en"
+        },
+        {
+          "id": "b1_corps_3",
+          "german": "corps3_de",
+          "french": "corps3_fr",
+          "english": "corps3_en"
+        },
+        {
+          "id": "b1_corps_4",
+          "german": "corps4_de",
+          "french": "corps4_fr",
+          "english": "corps4_en"
+        },
+        {
+          "id": "b1_corps_5",
+          "german": "corps5_de",
+          "french": "corps5_fr",
+          "english": "corps5_en"
+        },
+        {
+          "id": "b1_corps_6",
+          "german": "corps6_de",
+          "french": "corps6_fr",
+          "english": "corps6_en"
+        },
+        {
+          "id": "b1_corps_7",
+          "german": "corps7_de",
+          "french": "corps7_fr",
+          "english": "corps7_en"
+        },
+        {
+          "id": "b1_corps_8",
+          "german": "corps8_de",
+          "french": "corps8_fr",
+          "english": "corps8_en"
+        },
+        {
+          "id": "b1_corps_9",
+          "german": "corps9_de",
+          "french": "corps9_fr",
+          "english": "corps9_en"
+        },
+        {
+          "id": "b1_corps_10",
+          "german": "corps10_de",
+          "french": "corps10_fr",
+          "english": "corps10_en"
+        },
+        {
+          "id": "b1_corps_11",
+          "german": "corps11_de",
+          "french": "corps11_fr",
+          "english": "corps11_en"
+        },
+        {
+          "id": "b1_corps_12",
+          "german": "corps12_de",
+          "french": "corps12_fr",
+          "english": "corps12_en"
+        },
+        {
+          "id": "b1_corps_13",
+          "german": "corps13_de",
+          "french": "corps13_fr",
+          "english": "corps13_en"
+        },
+        {
+          "id": "b1_corps_14",
+          "german": "corps14_de",
+          "french": "corps14_fr",
+          "english": "corps14_en"
+        },
+        {
+          "id": "b1_corps_15",
+          "german": "corps15_de",
+          "french": "corps15_fr",
+          "english": "corps15_en"
+        },
+        {
+          "id": "b1_corps_16",
+          "german": "corps16_de",
+          "french": "corps16_fr",
+          "english": "corps16_en"
+        },
+        {
+          "id": "b1_corps_17",
+          "german": "corps17_de",
+          "french": "corps17_fr",
+          "english": "corps17_en"
+        },
+        {
+          "id": "b1_corps_18",
+          "german": "corps18_de",
+          "french": "corps18_fr",
+          "english": "corps18_en"
+        },
+        {
+          "id": "b1_corps_19",
+          "german": "corps19_de",
+          "french": "corps19_fr",
+          "english": "corps19_en"
+        },
+        {
+          "id": "b1_corps_20",
+          "german": "corps20_de",
+          "french": "corps20_fr",
+          "english": "corps20_en"
+        }
+      ]
+    }
+  ]
+}
