@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "category": "Idées",
+      "words": [
+        {
+          "id": "b1_beschreiben",
+          "german": "beschreiben",
+          "french": "décrire",
+          "english": "to describe",
+          "examples": [
+            {
+              "de": "Sie beschreibt die Situation.",
+              "fr": "Elle décrit la situation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
