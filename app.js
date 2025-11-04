@@ -1,3 +1,175 @@
+diff --git a/app.js b/app.js
+index 711ae7730ea741175178444f0af56aeb9357403a..395bf596e02cd50769edbe57ec90c2ea73782583 100644
+--- a/app.js
++++ b/app.js
+@@ -1,84 +1,147 @@
+ 
+ /* =======================================================
+    German Learning App - Persisted + Import + Packs
+    - Progression sauvegardée (localStorage)
+    - Exemples logiques (1 phrase / mot)
+    - Import CSV/JSON
+    - Chargement rapide des packs par niveau (data/a1_words.json ...)
+    - UI compatible avec l'index.html fourni
+    ======================================================= */
+ 
+ (function () {
+   /* ------------------ Progress Store ------------------ */
+   const STORAGE_KEY = "germanAppProgress.v1";
+-  const defaultProgress = {
++  const MS_PER_DAY = 24 * 60 * 60 * 1000;
++
++  const createDefaultProgress = () => ({
+     wordsLearned: {}, // {wordId: countCorrect}
+     streak: 0,
+     lastStudyDate: null, // "YYYY-MM-DD"
+     level: "A1"
+-  };
++  });
++
++  function cloneProgress(progress) {
++    const base = createDefaultProgress();
++    const src = progress || {};
++    return {
++      ...base,
++      ...src,
++      wordsLearned: { ...base.wordsLearned, ...(src.wordsLearned || {}) }
++    };
++  }
++
++  function toISODate(date) {
++    const year = date.getFullYear();
++    const month = String(date.getMonth() + 1).padStart(2, "0");
++    const day = String(date.getDate()).padStart(2, "0");
++    return `${year}-${month}-${day}`;
++  }
++
++  function parseISODate(value) {
++    if (!value || typeof value !== "string") return null;
++    const parts = value.split("-").map(Number);
++    if (parts.length !== 3 || parts.some((n) => Number.isNaN(n))) return null;
++    const [y, m, d] = parts;
++    return new Date(y, m - 1, d);
++  }
++
++  function diffInDays(later, earlier) {
++    if (!(later instanceof Date) || !(earlier instanceof Date)) return 0;
++    if (Number.isNaN(later.getTime()) || Number.isNaN(earlier.getTime())) return 0;
++    const start = new Date(later.getFullYear(), later.getMonth(), later.getDate());
++    const end = new Date(earlier.getFullYear(), earlier.getMonth(), earlier.getDate());
++    return Math.floor((start - end) / MS_PER_DAY);
++  }
++
+   function loadProgress() {
+     try {
+       const raw = localStorage.getItem(STORAGE_KEY);
+-      const p = raw ? JSON.parse(raw) : defaultProgress;
+-      return Object.assign({}, defaultProgress, p);
++      if (!raw) return createDefaultProgress();
++      const parsed = JSON.parse(raw);
++      return cloneProgress(parsed);
+     } catch (_) {
+-      return { ...defaultProgress };
++      return createDefaultProgress();
+     }
+   }
++
+   function saveProgress(p) {
+-    localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
++    const sanitized = cloneProgress(p);
++    localStorage.setItem(STORAGE_KEY, JSON.stringify(sanitized));
+   }
++
++  function registerStudyActivity(progress) {
++    const todayISO = toISODate(new Date());
++    const lastStudyDate = parseISODate(progress.lastStudyDate);
++    const today = parseISODate(todayISO);
++
++    if (!lastStudyDate || Number.isNaN(lastStudyDate.getTime())) {
++      progress.streak = 1;
++    } else {
++      const gap = diffInDays(today, lastStudyDate);
++      if (gap === 1) {
++        progress.streak = (progress.streak || 0) + 1;
++      } else if (gap > 1) {
++        progress.streak = 1;
++      }
++    }
++
++    progress.lastStudyDate = todayISO;
++  }
++
++  function normalizeStreak() {
++    const progress = loadProgress();
++    if (!progress.lastStudyDate) return;
++
++    const today = parseISODate(toISODate(new Date()));
++    const last = parseISODate(progress.lastStudyDate);
++    if (!today || !last || Number.isNaN(today.getTime()) || Number.isNaN(last.getTime())) return;
++
++    const gap = diffInDays(today, last);
++
++    if (gap >= 2 && progress.streak !== 0) {
++      progress.streak = 0;
++      saveProgress(progress);
++    }
++  }
++
+   function markWordLearned(wordId) {
+     const p = loadProgress();
+     if (!p.wordsLearned[wordId]) p.wordsLearned[wordId] = 0;
+     p.wordsLearned[wordId] += 1;
++    registerStudyActivity(p);
+     saveProgress(p);
+     updateStatsUI();
+   }
+   function setLevel(lvl) {
+     const p = loadProgress();
+     p.level = lvl;
+     saveProgress(p);
+     updateStatsUI();
+   }
+   function updateDailyStreak() {
+-    const p = loadProgress();
+-    const today = new Date().toISOString().slice(0,10);
+-    if (!p.lastStudyDate) {
+-      p.streak = 1;
+-      p.lastStudyDate = today;
+-      saveProgress(p);
+-      return;
+-    }
+-    if (p.lastStudyDate === today) return;
+-    const prev = new Date(p.lastStudyDate);
+-    const diffDays = Math.round((new Date(today) - prev) / (1000*3600*24));
+-    p.streak = diffDays === 1 ? (p.streak + 1) : 1;
+-    p.lastStudyDate = today;
+-    saveProgress(p);
++    normalizeStreak();
+   }
+ 
+   /* ------------------ Base Vocabulary ------------------ */
+   const seedData = {
+     A1: [
+       { category: "Essentiels", words: [
+         { id: "a1_ich", german: "ich", french: "je", english: "I" },
+         { id: "a1_du", german: "du", french: "tu", english: "you (informal)" },
+         { id: "a1_Haus", german: "Haus", french: "maison", english: "house" },
+         { id: "a1_gehen", german: "gehen", french: "aller", english: "to go" },
+         { id: "a1_gut", german: "gut", french: "bon", english: "good" }
+       ]}
+     ],
+     A2: [{ category: "Courant", words: [
+       { id: "a2_wissen", german: "wissen", french: "savoir", english: "to know" },
+       { id: "a2_fahren", german: "fahren", french: "conduire", english: "to drive" }
+     ]}],
+     B1: [{ category: "Intermédiaire", words: [
+       { id: "b1_beschreiben", german: "beschreiben", french: "décrire", english: "to describe" }
+     ]}]
+   };
+   window.vocabularyData = window.vocabularyData || seedData;
+ 
+   /* ------------------ Example Generation ------------------ */
+   const isUpper = (s) => /^[A-ZÄÖÜ]/.test(s);
 
 /* =======================================================
    German Learning App - Persisted + Import + Packs
